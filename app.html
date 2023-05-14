@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/eb4a288377.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Mata mosquito</title>
+  </head>
+  <body>
+    <div id="box-info">
+      <img id="coracao01" src="assets/coracao_cheio.png" alt="heart1" />
+      <img id="coracao02" src="assets/coracao_cheio.png" alt="heart2" />
+      <img id="coracao03" src="assets/coracao_cheio.png" alt="heart3" />
+      <p>Tempo restante: <span id="time">...</span></p>
+    </div>
+
+    <img
+      class="mosquito"
+      id="mosquito01"
+      onclick="clicouMosquito('mosquito01');"
+      src="assets/mosquito.png"
+      alt="mosquito1"
+    />
+    <img
+      class="mosquito"
+      id="mosquito02"
+      onclick="clicouMosquito('mosquito02');"
+      src="assets/mosquito.png"
+      alt="mosquito2"
+    />
+    <img
+      class="mosquito"
+      id="mosquito03"
+      onclick="clicouMosquito('mosquito03');"
+      src="assets/mosquito.png"
+      alt="mosquito3"
+    />
+    <img
+      class="mosquito"
+      id="mosquito04"
+      onclick="clicouMosquito('mosquito04');"
+      src="assets/mosquito.png"
+      alt="mosquito4"
+    />
+    <img
+      class="mosquito"
+      id="mosquito05"
+      onclick="clicouMosquito('mosquito05');"
+      src="assets/mosquito.png"
+      alt="mosquito5"
+    />
+    <img
+      class="mosquito"
+      id="mosquito06"
+      onclick="clicouMosquito('mosquito06');"
+      src="assets/mosquito.png"
+      alt="mosquito6"
+    />
+    <img
+      class="mosquito"
+      id="mosquito07"
+      onclick="clicouMosquito('mosquito07');"
+      src="assets/mosquito.png"
+      alt="mosquito7"
+    />
+    <img
+      class="mosquito"
+      id="mosquito08"
+      onclick="clicouMosquito('mosquito08');"
+      src="assets/mosquito.png"
+      alt="mosquito8"
+    />
+    <img
+      class="mosquito"
+      id="mosquito09"
+      onclick="clicouMosquito('mosquito09');"
+      src="assets/mosquito.png"
+      alt="mosquito9"
+    />
+    <img
+      class="mosquito"
+      id="mosquito10"
+      onclick="clicouMosquito('mosquito10');"
+      src="assets/mosquito.png"
+      alt="mosquito10"
+    />
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/game.js"></script>
+
+    <script>
+
+      var nivel = window.location.search;
+      nivel = nivel.replace('?', '');
+
+      if (nivel == 'normal') {
+        game(3000);
+      } else if (nivel == 'dificil') {
+        game(1000);
+      } else if (nivel == 'chuck') {
+        game(800);
+      }
+
+    </script>
+
+  </body>
+</html>

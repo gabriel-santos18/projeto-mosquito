@@ -1,0 +1,109 @@
+* {
+    cursor: url(../assets/mata_mosquito.png), auto;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff url('../assets/bg.jpg') no-repeat;
+    background-size: cover;
+}
+
+select {
+    cursor: default;
+}
+
+#box-logo {
+    display: flex;
+    justify-content: center;
+}
+
+#box-play {
+    width: 201px;
+    margin: 0 auto;
+}
+
+#btn-play {
+    margin: 8px 33px;
+}
+
+#box-info {
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    width: 18%;
+    background: #d2e5bdde;
+}
+
+#box-info img {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+#box-info p {
+    margin-left: 10px;
+    font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+/* MOSQUITO */
+
+.mosquito {
+    display: none;
+    position: absolute;
+    width: 100px;
+}
+
+#mosquito01 {
+    left: 100px;
+    top: 300px;
+}
+
+#mosquito02 {
+    left: 500px;
+    top: 350px;
+}
+
+#mosquito03 {
+    left: 150px;
+    top: 100px;
+}
+
+#mosquito04 {
+    left: 500px;
+    top: 200px;
+}
+
+#mosquito05 {
+    left: 185px;
+    top: 205px;
+}
+
+#mosquito06 {
+    left: 300px;
+    top: 240px;
+}
+
+#mosquito07 {
+    left: 900px;
+    top: 100px;
+}
+
+#mosquito08 {
+    left: 800px;
+    top: 200px;
+}
+
+#mosquito09 {
+    left: 900px;
+    top: 400px;
+}
+
+#mosquito10 {
+    left: 800px;
+    top: 100px;
+}
+
+#box-btn {
+    margin-left: 501px;
+}
