@@ -1,6 +1,7 @@
 * {
     cursor: url(../assets/mata_mosquito.png), auto;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
@@ -13,8 +14,12 @@ select {
 }
 
 #box-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 #box-play {
